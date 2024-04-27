@@ -1,0 +1,18 @@
+/* Welcome.css */
+
+.welcome {
+  height: 100vh; 
+  background-image: url('../bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+  
+.welcome h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.welcome p {
+  color: #fff;
+  font-size: 1.5rem;
+}
