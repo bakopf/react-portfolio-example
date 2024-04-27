@@ -1,18 +1,77 @@
 /* Welcome.css */
 
 .welcome {
-  height: 100vh; 
-  background-image: url('../bg.jpg');
+  min-height: 100vh; /* Set minimum height to 100vh */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('../bg.jpg');
   background-size: cover;
   background-position: center;
-}
-  
-.welcome h1 {
-  color: #fff;
-  font-size: 3rem;
+  display: flex; /* Use flexbox to center content vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0; /* Add padding to center content */
+  padding-top: 100px;
 }
 
+.welcome h1,
 .welcome p {
-  color: #fff;
-  font-size: 1.5rem;
+  color: #ffffff;
 }
+
+.text-container {
+  background: rgba(204, 204, 204, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.box-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  background: rgba(204, 204, 204, 0.1);
+  color: #ffffff;
+  padding: 20px;
+  border: 1px solid orange;
+  border-radius: 8px;
+  width: calc(25% - 10px);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+}
+
+.icon {
+  font-size: 40px;
+  color: orange;
+}
+
+@media (max-width: 767px) {
+  .box-container {
+    flex-direction: column;
+  }
+  
+  .box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .box:hover {
+    transform: unset;
+  }
+}
+
