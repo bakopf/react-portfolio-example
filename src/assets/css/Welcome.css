@@ -1,14 +1,14 @@
 /* Welcome.css */
 
 .welcome {
-  min-height: 100vh; /* Set minimum height to 100vh */
+  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('../bg.jpg');
   background-size: cover;
   background-position: center;
-  display: flex; /* Use flexbox to center content vertically */
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0; /* Add padding to center content */
+  padding: 50px 0;
   padding-top: 100px;
 }
 
