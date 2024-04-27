@@ -1,0 +1,23 @@
+.contact {
+    margin: 80px 0 0;
+    padding: 100px 0;
+}
+
+.contact-container .contact-info > div {
+    display: flex;
+    align-items: center;
+}
+
+.contact-container .contact-info > div > span {
+    margin-left: 15px;
+}
+
+.contact .icon {
+    font-size: 22px;
+    color: black;
+    width: 1em;
+    height: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffc451
+}

@@ -34,7 +34,7 @@
   background: rgba(204, 204, 204, 0.1);
   color: #ffffff;
   padding: 20px;
-  border: 1px solid orange;
+  border: 1px solid #ffc451;
   border-radius: 8px;
   width: calc(25% - 10px);
   margin-right: 10px;
@@ -54,9 +54,9 @@
   font-size: 16px;
 }
 
-.icon {
+.welcome .icon {
   font-size: 40px;
-  color: orange;
+  color: #ffc451;
 }
 
 @media (max-width: 767px) {

@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './index.css';
 import './assets/css/Navigation.css'; 
 import './assets/css/Welcome.css'; 
+import './assets/css/Contact.css'; 
 
 
 
