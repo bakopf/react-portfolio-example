@@ -11,6 +11,7 @@ import './index.css';
 import './assets/css/Navigation.css'; 
 import './assets/css/Welcome.css'; 
 import './assets/css/Contact.css'; 
+import './assets/css/About.css'; 
 
 
 
