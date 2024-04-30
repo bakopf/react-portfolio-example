@@ -1,0 +1,21 @@
+/* PortfolioDetail.css */
+
+.portfolio-detail {
+    padding: 100px 0;
+}
+
+.portfolio-detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-detail-image {
+  background-size: cover;
+  background-position: center;
+  max-height: 500px;
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+

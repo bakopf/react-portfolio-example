@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import project1Image from '../assets/1.jpg';
-import project2Image from '../assets/2.jpg';
-import project3Image from '../assets/3.jpg';
+import { Link } from 'react-router-dom';
+import projectData from './content/projectData';
+
 function Portfolio() {
   const cardRefs = useRef([]);
 
@@ -28,43 +28,22 @@ function Portfolio() {
       <Container>
         <h2 className="text-white mb-5">My Portfolio</h2>
         <Row>
-          <Col md={4}>
-            <Card className="portfolio-item" ref={el => cardRefs.current[0] = el}>
-              <div className="portfolio-image" style={{ backgroundImage: `url(${project1Image})` }}></div>
-              <div className="portfolio-hover">
-                <div className="portfolio-hover-content">
-                  <h4>Project Name</h4>
-                  <p>Description of the project...</p>
-                  <a href="#">View Project</a>
-                </div>
-              </div>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="portfolio-item" ref={el => cardRefs.current[1] = el}>
-              <div className="portfolio-image" style={{ backgroundImage: `url(${project2Image})` }}></div>
-              <div className="portfolio-hover">
-                <div className="portfolio-hover-content">
-                  <h4>Project Name</h4>
-                  <p>Description of the project...</p>
-                  <a href="#">View Project</a>
-                </div>
-              </div>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="portfolio-item" ref={el => cardRefs.current[2] = el}>
-              <div className="portfolio-image" style={{ backgroundImage: `url(${project3Image})` }}></div>
-              <div className="portfolio-hover">
-                <div className="portfolio-hover-content">
-                  <h4>Project Name</h4>
-                  <p>Description of the project...</p>
-                  <a href="#">View Project</a>
-                </div>
-              </div>
-            </Card>
-          </Col>
-          {/* Add more Col components for additional projects */}
+          {projectData.map(project => (
+            <Col md={4} key={project.id}>
+              <Link to={`/portfolio/${project.id}`} style={{ textDecoration: 'none' }}>
+                <Card className="portfolio-item" ref={el => cardRefs.current[project.id - 1] = el}>
+                  <div className="portfolio-image" style={{ backgroundImage: `url(${project.imageUrl})` }}></div>
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <h4>{project.name}</h4>
+                      <p>{project.description}</p>
+                      <button>View Project</button>
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>
