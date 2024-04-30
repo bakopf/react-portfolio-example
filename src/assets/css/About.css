@@ -50,7 +50,7 @@
 }
 
 .about-image {
-    background-image: url('../profile.jpg');
+    background-image: url('../images/profile.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100%;

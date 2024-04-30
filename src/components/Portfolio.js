@@ -23,6 +23,11 @@ function Portfolio() {
     };
   }, []);
 
+  const getImageUrl = (relativeUrl) => {
+    const baseUrl = window.location.origin;
+    return `${baseUrl}${relativeUrl}`;
+  };
+
   return (
     <section id="portfolio" className="portfolio bg-dark">
       <Container>
@@ -32,7 +37,7 @@ function Portfolio() {
             <Col md={4} key={project.id}>
               <Link to={`/portfolio/${project.id}`} style={{ textDecoration: 'none' }}>
                 <Card className="portfolio-item" ref={el => cardRefs.current[project.id - 1] = el}>
-                  <div className="portfolio-image" style={{ backgroundImage: `url(${project.imageUrl})` }}></div>
+                  <div className="portfolio-image" style={{ backgroundImage: `url(${getImageUrl(project.imageUrl)})` }}></div>
                   <div className="portfolio-hover">
                     <div className="portfolio-hover-content">
                       <h4>{project.name}</h4>

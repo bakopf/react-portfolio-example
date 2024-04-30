@@ -2,7 +2,7 @@
 
 .welcome {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('../bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('../images/bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
