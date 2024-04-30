@@ -30,6 +30,9 @@ const BlogPostDetail = () => {
         <p>Loading...</p>
       ) : post ? (
         <div>
+          {post.filepath && (
+            <div className="blog-post-image rounded-start" style={{backgroundImage: `url(http://127.0.0.1:8000/storage/${post.filepath})`}}></div>
+          )}
           <h2 dangerouslySetInnerHTML={{ __html: post.headline }} />
           <p dangerouslySetInnerHTML={{ __html: post.text }} />
           <p>Author: {post.author}</p>

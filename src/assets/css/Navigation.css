@@ -4,11 +4,11 @@
   background-color: #343a40;
 }
 
-.navbar-brand,
-.navbar-nav .nav-link {
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
   color: #ffffff !important;
 }
 
-.navbar-toggler-icon {
+.navbar .navbar-toggler-icon {
   color: #ffffff;
 }

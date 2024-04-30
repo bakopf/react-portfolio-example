@@ -1,64 +1,65 @@
 /* Contact.css */
 
 .contact {  
-    margin: 80px 0 0;
-    padding: 100px 0;
+  margin: 80px 0 0;
+  padding: 100px 0;
 }
 
-.contact-container .contact-info > div {
-    display: flex;
-    align-items: center;
+.contact .contact-container .contact-info > div {
+  display: flex;
+  align-items: center;
 }
 
-.contact-container .contact-info > div > span {
-    margin-left: 15px;
+.contact .contact-container .contact-info > div > span {
+  margin-left: 15px;
 }
 
 .contact .icon {
-    font-size: 22px;
-    color: black;
-    width: 1em;
-    height: 1em;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ffc451
+  font-size: 22px;
+  color: black;
+  width: 1em;
+  height: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffc451
 }
+
 .contact .container .contact-form button {
-    color:#000000;
-    background-color: #ffc451;
-    height: 48px;
-    padding: 15px 32px;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 2px;
-    box-sizing: border-box;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    text-align: center;
-    min-width: 165px;
-    text-decoration: none;
-    line-height: 0;
+  color:#000000;
+  background-color: #ffc451;
+  height: 48px;
+  padding: 15px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  text-align: center;
+  min-width: 165px;
+  text-decoration: none;
+  line-height: 0;
 }
 
 .contact .container .contact-form button:active,
 .contact .container .contact-form button:visited,
 .contact .container .contact-form button:focus {
-    background-color: #ffc451;
-    outline: none;
-    border: none;
+  background-color: #ffc451;
+  outline: none;
+  border: none;
 }
 
-.contact .container .contact-form button:hover {
-    background-color: #ffd88f;
+.container .contact-form button:hover {
+  background-color: #ffd88f;
 }
 
-.contact .container .contact-form button:active {
-    box-shadow: none;
-    transform: translateY(1px);
-    -webkit-transform: translateY(1px);
-    -ms-transform: translateY(1px);
+.container .contact-form button:active {
+  box-shadow: none;
+  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
 }

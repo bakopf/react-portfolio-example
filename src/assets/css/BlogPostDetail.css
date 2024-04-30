@@ -1,5 +1,14 @@
 /* BlogPostDetail.css */
 
 .blog-post {
-    padding: 100px 0;
+  padding: 100px 0;
+}
+
+.blog-post .blog-post-image {
+  max-height: 500px;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }

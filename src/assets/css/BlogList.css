@@ -4,31 +4,33 @@
   padding: 100px 0;
 }
 
-.blog-card {
+.blog .blog-card {
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.blog-image {
+.blog .blog-image {
   height: 200px;
   background-size: cover;
   background-position: center;
+  border-radius: 10px 10px 0 0;
 }
 
-.blog-card .card-title {
+.blog .blog-card .card-title {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-.blog-card .card-subtitle {
+.blog .blog-card .card-subtitle {
   font-size: 0.875rem;
 }
 
-.equal-height {
+.blog .equal-height {
   display: flex;
 }
 
-.equal-height .blog-card {
+.blog .equal-height .blog-card {
   flex: 1;
 }
 

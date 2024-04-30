@@ -17,40 +17,40 @@
   color: #ffffff;
 }
 
-.text-container {
+.welcome .text-container {
   background: rgba(204, 204, 204, 0.1);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-.box-container {
+.welcome  .box-container {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.box {
+.welcome .box {
   background: rgba(204, 204, 204, 0.1);
   color: #ffffff;
   padding: 20px;
   border: 1px solid #ffc451;
-  border-radius: 8px;
+  border-radius: 10px;
   width: calc(25% - 10px);
   margin-right: 10px;
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.box:hover {
+.welcome .box:hover {
   transform: scale(1.05);
 }
 
-.box h3 {
+.welcome .box h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.box p {
+.welcome .box p {
   font-size: 16px;
 }
 
@@ -60,17 +60,17 @@
 }
 
 @media (max-width: 767px) {
-  .box-container {
+  .welcome .box-container {
     flex-direction: column;
   }
   
-  .box {
+  .welcome .box {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  .box:hover {
+  .welcome .box:hover {
     transform: unset;
   }
 }

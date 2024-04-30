@@ -24,7 +24,7 @@ function Portfolio() {
   }, []);
 
   return (
-    <section id="portfolio" className="portfolio bg-dark py-5">
+    <section id="portfolio" className="portfolio bg-dark">
       <Container>
         <h2 className="text-white mb-5">My Portfolio</h2>
         <Row>
