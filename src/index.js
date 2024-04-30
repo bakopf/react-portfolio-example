@@ -14,6 +14,7 @@ import './assets/css/Contact.css';
 import './assets/css/About.css'; 
 import './assets/css/BlogList.css'; 
 import './assets/css/BlogPostDetail.css'; 
+import './assets/css/Portfolio.css'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

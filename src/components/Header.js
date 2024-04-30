@@ -37,6 +37,7 @@ const Navigation = () => {
           <Nav className="ml-auto">
           <Nav.Link href={getLinkPath('home')} onClick={handleLinkClick}>Home</Nav.Link>
           <Nav.Link href={getLinkPath('about')} onClick={handleLinkClick}>About</Nav.Link>
+          <Nav.Link href={getLinkPath('portfolio')} onClick={handleLinkClick}>Portfolio</Nav.Link>
           <Nav.Link href={getLinkPath('blog')} onClick={handleLinkClick}>Blog</Nav.Link>
           <Nav.Link href={getLinkPath('contact')} onClick={handleLinkClick}>Contact</Nav.Link>
           </Nav>
