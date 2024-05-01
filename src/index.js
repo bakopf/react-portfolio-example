@@ -16,6 +16,7 @@ import './assets/css/BlogList.css';
 import './assets/css/BlogPostDetail.css'; 
 import './assets/css/Portfolio.css'; 
 import './assets/css/PortfolioDetail.css'; 
+import './assets/css/QuoteOfTheDay.css'; 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

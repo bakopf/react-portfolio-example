@@ -8,7 +8,9 @@ import Welcome from './components/Welcome';
 import Blog from './components/Blog';
 import BlogPostDetail from './components/BlogPostDetail';
 import Footer from './components/Footer';
-import PortfolioDetail from './components/PortfolioDetails/PortfolioDetail'; // Import PortfolioDetail
+import PortfolioDetail from './components/PortfolioDetails/PortfolioDetail';
+import QuoteOfTheDay from './components/QuoteOfTheDay';
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function MainPage() {
   return (
     <div>
       <Welcome />
+      <QuoteOfTheDay />
       <About />
       <Portfolio />
       <Blog />
